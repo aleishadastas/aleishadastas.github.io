@@ -1,0 +1,46 @@
+/* Fonts */
+@font-face {
+    font-family: "Junicode";
+    src: url(Assets/Junicode.ttf);
+}
+@font-face {
+    font-family: "Junicode-italic";
+    src: url(Assets/Junicode-Italic.ttf);
+}
+
+body{
+    font-family: "Junicode";
+    margin: 9vw;
+    margin-top: 13vw;
+    /* padding-right: 7vw; */
+    font-size: 25px;
+}
+
+h1{
+    font-weight: normal;
+    line-height: 65px;
+}
+
+#name{
+font-weight: bold;
+}
+
+#arrow{
+font-size: 30px;
+color: #ffb4a0;
+}
+
+.work{
+margin-top: -1vw;
+}
+
+a{
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    font-family: "Junicode-italic";
+    cursor:pointer;
+}
