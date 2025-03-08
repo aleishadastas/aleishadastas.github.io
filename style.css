@@ -148,3 +148,7 @@ hr{
     /* text-decoration: underline; */
     font-family: "Junicode-Italic";
 }
+
+.gallery img{
+    height: 74.6vw;
+margin-left: -10px; }
