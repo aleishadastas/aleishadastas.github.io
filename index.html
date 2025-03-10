@@ -1,53 +1,45 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Aleisha Dastas | Portfolio</title>
-        <link rel="icon" type="png" href="Assets/faviconaleisha.png">
+        <!-- <link rel="icon" type="image/gif" href="Assets/Trees.gif"> -->
+        <link rel="icon" type="png" href="Assets/dogFav.png">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="gone.css">
     </head>
     <body>
-        <!-- <div class="nav"></div> -->
-            <!-- <div id="name"><a><p>Aleisha Dastas</p></a></div>
-            <div><a><p id="">About</p></a></div>
-            <div><a><p id="">Contact</p></a></div> -->
-            <div class="flex-container">
-        <div class="column">
-            <hr class="accent">
-             <h1><span id="name">Aleisha Dastas </span>(b. 2003, Puerto Rico) – multidisciplinary designer 
-                and artist based in New York, New York.<br>
-                <span id="header">Selected work</span> <span id="arrow">⤵</span>
-            </h1>
-        
-        <div class="work">
-            <div><a href="metamorphosis.html"><span id="arrow">→</span> Metamorphosis: The Art, Philosophy, <br>&nbsp;&nbsp;&nbsp;and Sustainability of Fungi<br><span id="caption">Physical and screen-based materials promoting MoMA</span></a>
-                <div class="gallery"><img src="Assets/closeup1 copy.png" alt="Book Mockup 1"></div>
-            </div>
-            <div><a href="signals.html"><span id="arrow">→</span> Signals: How Video Transformed the World<br><span id="caption">Physical and screen-based materials promoting MoMA</span></a></div>
-            <div><a href="https://aleishadastas.github.io/StreetConstructionPermits/"><span id="arrow">→</span> New York City in Data<span id="externalArrow">↗︎</span><br><span id="caption">Reinterpreting external sources of data into narrative experiences</span></a></div>   
-            <div><a href="motherlyLove.html"> <span id="arrow">→</span> Motherly Love<br><span id="caption">A publication embodying the notion of home</span></a></div>
-            <div><a href="tidal.html"><span id="arrow">→</span> Tidal<br><span id="caption">A poster series exploring typography and its voice</span></a></div>
-            <div><a href="teamTalavera.html"><span id="arrow">→</span> Team Talavera<br><span id="caption">An identity representing AAU Junior Olympics athlete</span></a></div>
-            <!-- <div><a href="magicalContaminations.html"><span id="arrow">→</span> Magical Contaminations<br><span id="caption">Exploring phenomenology through fungi</span></a></div> -->
-        </div> </div>
-        <div class="column2">
-            <hr class="accent">
-<h1>Contact<br>
-    <div class="contact">
-<a href="mailto:dasta499@newschool.com">Email</a><span id="externalArrow">↗︎</span><br>
-<a href="https://www.instagram.com/d0gleash">Instagram</a><span id="externalArrow">↗︎</span></div>
-</h1>
-<!-- <button id="email"><a href="mailto:dasta499@newschool.edu">email</a></button>
-<button id="instagram"><a href="instagram.com/d0gleash">instagram</a></button> -->
-        </div>
+        <div class="prevent-select">
+<img src="Assets/Trees.gif" alt="Description of Gif" class="custom-gif">
+        <p class="bio">Aleisha Dastas (b. 2003, Puerto Rico) is a multidisciplinary designer and artist based in New York,
+             New York interested in treating otherwise mundane or disposable objects as valuable artifacts. 
+            </p>
+        <p class="contact"><a id="mail" href="">aleisha.dastas@gmail.com</a> <span>/</span> <a id="instagram" href="https://www.instagram.com/d0gleash/">@d0gleash</a></p>
     </div>
+        <script> let offsetX, offsetY;
 
-        <script src="index.js" async defer></script>
+            document.body.addEventListener('mousedown', (e) => {
+              offsetX = e.clientX - document.body.getBoundingClientRect().left;
+              offsetY = e.clientY - document.body.getBoundingClientRect().top;
+            
+              function drag(e) {
+                let left = e.clientX - offsetX;
+                let top = e.clientY - offsetY;
+            
+                // Allow the body to move beyond the viewport and hide overflow
+                document.body.style.left = `${left}px`;
+                document.body.style.top = `${top}px`;
+              }
+            
+              function stopDrag() {
+                document.removeEventListener('mousemove', drag);
+                document.removeEventListener('mouseup', stopDrag);
+              }
+            
+              document.addEventListener('mousemove', drag);
+              document.addEventListener('mouseup', stopDrag);
+            });</script>
     </body>
 </html>
-
-<!-- ୨୧ -->

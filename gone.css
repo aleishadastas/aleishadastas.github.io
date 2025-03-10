@@ -1,0 +1,77 @@
+/* Fonts */
+@font-face {
+    font-family: "Junicode";
+    src: url(Assets/Junicode.ttf);
+}
+
+html{
+    background-color: black;
+}
+
+body{
+    font-family: "Junicode";
+    margin: 0;
+    /* padding-right: 7vw; */
+    font-size: 18px;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: rotate(1.22182deg);
+    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    cursor: move;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.custom-gif{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    color: white;
+    padding-top: 10px;
+    line-height: 20px;
+    /* margin-left: 20vw;
+    margin-right: 20vw; */
+    white-space: nowrap;
+}
+
+p.contact{
+    text-align: center;
+}
+
+span{
+    color:  #ffb4a0; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover{
+    color:  #ffb4a0; 
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
