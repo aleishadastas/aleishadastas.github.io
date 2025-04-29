@@ -16,7 +16,7 @@ body{
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    transform: rotate(2.5deg);
+    transform: rotate(2.8deg);
     align-items: center; /* Center vertically */
     display: flex;
     justify-content: center;
