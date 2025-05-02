@@ -178,7 +178,7 @@ a:hover{
   padding-top: 20px;
   height: 500px;
   margin: auto;
-  gap: 20px; /* space between arrows and image */
+  gap: 10px; /* space between arrows and image */
   /* background-color: aquamarine; */
   transition: opacity 0.45s ease-in-out;
 }
