@@ -85,7 +85,6 @@ body {
   .row .column1 {
     position: relative;
     flex-shrink: 0; /* Prevent from shrinking */
-    cursor: e-resize;
     height: auto;
     margin-right: 30px;
     flex-basis: 26vw;
@@ -122,7 +121,7 @@ body {
   }
   
   .project-name#individual{
-    padding-bottom: 11px;
+    padding-bottom: 12px;
     border-bottom: .5px solid #ffb4a0;; /* Add a line between rows */
   }
 
@@ -134,10 +133,11 @@ body {
   #header{
     font-family: "Junicode";
     text-decoration: underline .5px #ffb4a0;
-    text-underline-offset: 8px;
+    text-underline-offset: 6px;
     font-kerning: normal;
     font-size: 22px;
     pointer-events: auto;
+    padding-top: 6px;
   }
 
   #arrow{
@@ -175,7 +175,7 @@ a:hover{
   align-items: center;
   width: 100%;
   max-width: 900px;
-  padding-top: 8px;
+  padding-top: 20px;
   height: 500px;
   margin: auto;
   gap: 20px; /* space between arrows and image */
@@ -214,4 +214,23 @@ a:hover{
 
 .prev{
   transform: rotate(180deg);
+}
+
+
+.info{
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 28px;
+  gap: 45px;
+}
+
+.about{
+width: 54vw;
+height: auto;
+}
+
+.year{
+width: 38vw;
 }
