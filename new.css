@@ -224,6 +224,7 @@ a:hover{
   flex-direction: row;
   padding-top: 28px;
   gap: 45px;
+  margin-bottom: 15px;
 }
 
 .about{
