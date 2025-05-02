@@ -1,0 +1,217 @@
+/* Fonts */
+@font-face {
+    font-family: "Junicode";
+    src: url(Assets/Junicode.ttf);
+}
+
+@font-face {
+    font-family: "Junicode-Italic";
+    src: url(Assets/Junicode-Italic.ttf);
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    font-family: "Junicode";
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* .bio #logo{
+    width: auto;
+    height: 200px;
+    margin-left: -15px;
+    margin-bottom: -15px;
+} */
+
+.row p{
+    line-height: 18px;
+}
+
+.custom-gif {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    width: auto;
+    height: 4vw;
+    z-index: 1000; /* Ensures it's on top */
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px; /* optional, adds space between bio and projects */
+    margin-left: 30px;
+}
+
+.bio {
+    width: 26vw;
+    margin-top: 10px;
+    height: auto;
+}
+
+.projects {
+    /* flex: 2; */
+    overflow-y: scroll;
+    padding-right: 20px;
+    height: 98vh;
+    width: 65vw;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 24px; /* Adds space before the bottom border */
+    padding-top: 24px;
+    height: 270px; /* Set a specific height for the rows */
+    border-bottom: 0.5px solid #ffb4a0;; /* Add a line between rows */
+  }
+  
+  .column1, .column2, .column3 {
+    font-size: 14px;
+    height: 100%;
+  }
+
+  .row .column1 {
+    position: relative;
+    flex-shrink: 0; /* Prevent from shrinking */
+    cursor: e-resize;
+    height: auto;
+    margin-right: 30px;
+    flex-basis: 26vw;
+  }  
+
+  .row .column2{
+    flex-basis: 34vw;
+        margin-right: 35px;
+  }
+
+  .row .column3{
+    text-align: center;
+    width: 12vw;
+    flex-basis: 16vw;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the column */
+    height: 100%;
+    object-fit: cover; /* Optional: maintain aspect ratio */
+    opacity: 0;
+    transition: opacity 0.45s ease-in-out;
+  }  
+
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .project-name{
+    font-size: 22px;
+  }
+  
+  .project-name#individual{
+    padding-bottom: 11px;
+    border-bottom: .5px solid #ffb4a0;; /* Add a line between rows */
+  }
+
+  h1{
+    font-family: "Junicode-Italic";
+    line-height: 23.5px;
+  }
+
+  #header{
+    font-family: "Junicode";
+    text-decoration: underline .5px #ffb4a0;
+    text-underline-offset: 8px;
+    font-kerning: normal;
+    font-size: 22px;
+    pointer-events: auto;
+  }
+
+  #arrow{
+    font-size: 10px;
+    color: #ffb4a0;
+}
+
+#symbol{
+  color: #ffb4a0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover{
+    color:  #ffb4a0; 
+}
+
+.contact{
+  z-index: 1000; /* Ensures it's on top */
+}
+
+.italics{
+  font-family: "Junicode-Italic";
+}
+
+/* Image Gallery */
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  padding-top: 8px;
+  height: 500px;
+  margin: auto;
+  gap: 20px; /* space between arrows and image */
+  /* background-color: aquamarine; */
+  transition: opacity 0.45s ease-in-out;
+}
+
+.image-container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery button {
+  background: none;
+  color: #ffb4a0;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 36px;
+  transition: color 0.3s ease;
+}
+
+.gallery button:hover {
+  color: white;
+}
+
+.prev{
+  transform: rotate(180deg);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aleisha Dastas</title>
+        <!-- <link rel="icon" type="image/gif" href="Assets/Trees.gif"> -->
+        <link rel="icon" type="png" href="Assets/dogFav.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="gone.css">
+    </head>
+    <body>
+        <div class="prevent-select">
+<img src="Assets/Trees.gif" alt="Description of Gif" class="custom-gif">
+        <p class="bio">Aleisha Dastas (b. 2003, Puerto Rico) is a <br>multidisciplinary designer and artist based <br> in New York,
+             NY interested in treating <br>otherwise mundane or disposable objects <br> as valuable artifacts. 
+            </p>
+
+            <p class="note">This is a temporary site. Full site coming soon.</p>
+
+        <p class="contact"><a id="mail" href="mailto:aleisha.dastas@gmail.com">aleisha.dastas@gmail.com</a> <span id="slash">/</span> <a id="instagram" href="https://www.instagram.com/d0gleash/">@d0gleash</a> <span id="slash">/</span> <br> <a id="mail" href="https://www.figma.com/deck/szNvjNaYHtGhiczTleRtfm/Untitled?node-id=11-680&viewport=-63%2C40%2C0.36&t=poQKbQfxTCN3LdUM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">portfolio↗</a>
+          <!-- <span>/</span> <a id="arena" href="https://www.are.na/aleisha-dastas/channels">are.na</a> --> <span id="slash">/</span> <a id="phone">210.850.2632</a>
+        </p>
+      
+    </div>
+        <script> let offsetX, offsetY;
+
+            document.body.addEventListener('mousedown', (e) => {
+              offsetX = e.clientX - document.body.getBoundingClientRect().left;
+              offsetY = e.clientY - document.body.getBoundingClientRect().top;
+            
+              function drag(e) {
+                let left = e.clientX - offsetX;
+                let top = e.clientY - offsetY;
+            
+                // Allow the body to move beyond the viewport and hide overflow
+                document.body.style.left = `${left}px`;
+                document.body.style.top = `${top}px`;
+              }
+            
+              function stopDrag() {
+                document.removeEventListener('mousemove', drag);
+                document.removeEventListener('mouseup', stopDrag);
+              }
+            
+              document.addEventListener('mousemove', drag);
+              document.addEventListener('mouseup', stopDrag);
+            });</script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="new.css">
+  </head>
+  <body>
+  
+   <div class="page-container">
+    <div class="bio">
+      <!-- <img src="Assets/aleishasignature_720 2.png"  id="logo"> -->
+      <h1 id="header"> <a href="https://aleishadastas.com/"> Aleisha Dastas </a></h1> 
+      
+      <p>(b. 2003, Puerto Rico) is a multidisciplinary designer and artist based in New York,
+      NY interested in treating otherwise mundane or disposable objects as valuable artifacts. 
+    
+  She is currently finishing her final year at Parsons School of Design pursuing a BFA in Communication Design.</p>
+<br>
+      <div class="contact">
+      Recently: <br>
+      <span id="symbol">⟢</span> <span class="italics"> Erfenis Plantin </span> selected for the Typeface 
+Specimen Feature in the 2025 Parsons Communication Design Catalog.
+<br>
+<span id="symbol">⟢</span> Featured in the inaugural issue 
+of The Visual Archive publication, 
+curated by Pascal Glissmann.
+     <br><br><br>
+     Contact: <br>
+     <a id="mail" href="mailto:aleisha.dastas@gmail.com">
+       aleisha.dastas@gmail.com<span id="arrow">↗</span></a> <br> 
+       <!-- <span id="slash">/</span>  -->
+       <a id="instagram" href="https://www.instagram.com/d0gleash/">@d0gleash<span id="arrow">↗</span></a> <br> 
+       <a id="mail" href="https://www.figma.com/deck/szNvjNaYHtGhiczTleRtfm/Untitled?node-id=11-680&viewport=-63%2C40%2C0.36&t=poQKbQfxTCN3LdUM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">portfolio<span id="arrow">↗</span></a>
+       <br><a id="instagram" href="https://www.are.na/aleisha-dastas/channels">are.na<span id="arrow">↗</span></a>
+        </div>
+      <img src="Assets/Trees.gif" alt="Description of Gif" class="custom-gif">
+    </div>
+
+    <div class="projects">
+        <h1 class="project-name" id="individual">Dissolving Histories (Saltwater & Hydroquinone)</h1>
+      
+        <div class="gallery">
+            <button class="prev">⟢</button>
+            <div class="image-container">
+              <img id="slideshow-image" src="Assets/image1.jpg" alt="Slideshow image">
+            </div>
+            <button class="next">⟢</button>
+          </div>
+          
+
+<div class="about">
+
+</div>
+
+<div class="year">
+
+</div>
+
+        </div>
+
+
+    </div>
+
+    
+    <script>
+        const images = [
+          "Assets/Salt/ALEISHA_RIVER-3.jpg",
+          "Assets/Salt/ALEISHA_RIVER-1.jpg",
+           "Assets/Salt/ALEISHA_RIVER-17.jpg"
+        ];
+      
+        let currentIndex = 0;
+        const imgElement = document.getElementById("slideshow-image");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+      
+        prevButton.addEventListener("click", () => {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          imgElement.src = images[currentIndex];
+        });
+      
+        nextButton.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % images.length;
+          imgElement.src = images[currentIndex];
+        });
+      </script>
+      
+    
+  
+  </body>
+</html>
