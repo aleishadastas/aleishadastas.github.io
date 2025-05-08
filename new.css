@@ -35,7 +35,6 @@ body {
 
 .custom-gif {
     width: auto;
-    height: 20px;
     position: absolute;
     bottom: 20px;
     width: auto;
@@ -47,7 +46,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 40px; /* optional, adds space between bio and projects */
+    gap: 45px; /* optional, adds space between bio and projects */
     margin-left: 30px;
 }
 
@@ -62,7 +61,7 @@ body {
     overflow-y: scroll;
     padding-right: 20px;
     height: 98vh;
-    width: 65vw;
+    width: 70vw;
     padding-top: 20px;
     padding-bottom: 60px;
 }
@@ -71,9 +70,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 24px; /* Adds space before the bottom border */
-    padding-top: 24px;
-    height: 270px; /* Set a specific height for the rows */
+    padding-bottom: 30px; /* Adds space before the bottom border */
+    padding-top: 30px;
+    height: 45vh; /* Set a specific height for the rows */
     border-bottom: 0.5px solid #ffb4a0;; /* Add a line between rows */
   }
   
@@ -87,20 +86,20 @@ body {
     flex-shrink: 0; /* Prevent from shrinking */
     height: auto;
     margin-right: 30px;
-    flex-basis: 26vw;
+    flex-basis: 40vw;
   }  
 
   .row .column2{
-    flex-basis: 34vw;
+    flex-basis: 40vw;
         margin-right: 35px;
         padding-top: -10px;
   }
 
-  .row .column3{
+  /* .row .column3{
     text-align: center;
     width: 12vw;
     flex-basis: 16vw;
-  }
+  } */
   
   .slide {
     position: absolute;
