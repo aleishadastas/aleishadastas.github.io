@@ -67,7 +67,7 @@ p {
     height: 102vh;
     width: 70vw;
     padding-bottom: 60px;
-margin-top: 20px;
+margin-top: 15px;
 }
 
 .row {
@@ -140,7 +140,6 @@ margin-top: 20px;
     font-kerning: normal;
     font-size: 22px;
     pointer-events: auto;
-    padding-top: 6px;
   }
 
   /* #arrow{
