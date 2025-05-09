@@ -64,7 +64,7 @@ p {
     /* flex: 2; */
     overflow-y: scroll;
     padding-right: 20px;
-    height: 100vh;
+    height: 102vh;
     width: 70vw;
     padding-bottom: 60px;
 margin-top: 20px;
@@ -76,7 +76,7 @@ margin-top: 20px;
     justify-content: space-between;
     padding-bottom: 35px; /* Adds space before the bottom border */
     padding-top: 35px;
-    height: 45vh; /* Set a specific height for the rows */
+    height: 53vh; /* Set a specific height for the rows */
     border-bottom: 0.5px solid #ffb4a0; /* Add a line between rows */
   }
   
@@ -90,7 +90,7 @@ margin-top: 20px;
     flex-shrink: 0; /* Prevent from shrinking */
     height: auto;
     margin-right: 30px;
-    flex-basis: 40vw;
+    flex-basis: 42vw;
   }  
 
   .row .column2{
@@ -110,7 +110,7 @@ margin-top: 20px;
     left: 0;
     width: 100%; /* Fill the column */
     height: 100%;
-    object-fit: contain; /* Optional: maintain aspect ratio */
+    object-fit: cover; /* Optional: maintain aspect ratio */
     opacity: 0;
     transition: opacity 0.45s ease-in-out;
   }  
