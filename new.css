@@ -237,3 +237,52 @@ height: auto;
 .year{
 width: 38vw;
 }
+
+@media screen and (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+
+  .bio {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .projects {
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+
+  .row {
+    flex-direction: column;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .row .column1,
+  .row .column2 {
+    width: 100%;
+    flex-basis: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about, .year {
+    width: 100%;
+  }
+
+  .custom-gif {
+    height: 10vw;
+  }
+}
