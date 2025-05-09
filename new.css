@@ -294,9 +294,9 @@ width: 38vw;
 
   .custom-gif {
     height: 10vw;
-    position: absolute;
-    margin-left: 390px;
-    margin-bottom: 502px;
+    position: relative;
+    margin-top: -38px;
+    margin-left: 392px;
   }
 
   .slide{
