@@ -124,7 +124,7 @@ margin-top: 20px;
   }
   
   .project-name#individual{
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     border-bottom: .5px solid #ffb4a0;; /* Add a line between rows */
   }
 
@@ -221,12 +221,11 @@ a:hover{
 
 
 .info{
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 14px;
   line-height: 18px;
   display: flex;
   flex-direction: row;
-  padding-top: 28px;
   gap: 45px;
   margin-bottom: 42px;
 }
