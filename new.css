@@ -239,36 +239,37 @@ width: 38vw;
 }
 
 @media screen and (max-width: 768px) {
+  html, body {
+    height: auto;
+    overflow-y: auto;
+  }
+
   .page-container {
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 20px 10px;
     gap: 20px;
   }
 
   .bio {
     width: 100%;
-    margin-top: 20px;
   }
 
   .projects {
     width: 100%;
     height: auto;
-    overflow-y: visible;
+    overflow: visible;
     padding-right: 0;
   }
 
   .row {
     flex-direction: column;
     height: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 0;
   }
 
   .row .column1,
   .row .column2 {
     width: 100%;
-    flex-basis: auto;
     margin-right: 0;
     margin-bottom: 20px;
   }
