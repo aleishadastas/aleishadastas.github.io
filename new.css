@@ -276,11 +276,11 @@ width: 38vw;
   }
 
 .row .column1{
-  flex-basis: 60vw;
+  flex-basis: 65vw;
 }
 
 .row .column2{
-  flex-basis: 20vw;
+  flex-basis: 28vw;
 }
 
   .info {
@@ -295,13 +295,21 @@ width: 38vw;
   .custom-gif {
     height: 10vw;
     position: absolute;
-    margin-left: 50vw;
+    margin-left: 390px;
+    margin-bottom: 500px;
   }
 
   .slide{
-    padding-top: 30px;
+    padding-top: 34px;
   }
 
+  .project-name{
+    padding-top: 20px;
+  }
+
+  .page-container{
+    margin-top: -10px;
+  }
 
 }
 
