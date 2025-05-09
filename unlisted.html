@@ -112,13 +112,13 @@ Getty Images, Google Maps, IMBd, Internet Archive, JSTOR, Library of Congress, L
     
     <script>
       const images = [
-        "Assets/Salt/ALEISHA_RIVER-3.jpg",
-        "Assets/Salt/ALEISHA_RIVER-1.jpg",
-        "Assets/Salt/ALEISHA_RIVER-16.jpg",
-        "Assets/Salt/ALEISHA_RIVER-17.jpg",
-        "Assets/Salt/Gif.gif",
-        "Assets/Salt/Captions1.jpg",
+        "Assets/Unlisted/Stack3.png",
+        "Assets/Unlisted/Gallery/UnlistedCovers-ezgif.com-speed.gif",
+        "Assets/Unlisted/Unlisted_2.jpg",
+        "Assets/Unlisted/Gallery/Frame 3.png",
+        "Assets/Unlisted/Gallery/Scan 610.png",
         "Assets/Salt/Captions2.jpg",
+        "Assets/Unlisted/ezgif.com-animated-gif-maker.gif",
         "Assets/Salt/ClosedContainerCloseUp.jpg",
         "Assets/Salt/OpenContainerCloseUp.jpg"
       ];
@@ -127,6 +127,7 @@ Getty Images, Google Maps, IMBd, Internet Archive, JSTOR, Library of Congress, L
       const imgElement = document.getElementById("slideshow-image");
       const prevButton = document.querySelector(".prev");
       const nextButton = document.querySelector(".next");
+      
     
       // Set the initial image on page load
       window.addEventListener("DOMContentLoaded", () => {
@@ -142,6 +143,8 @@ Getty Images, Google Maps, IMBd, Internet Archive, JSTOR, Library of Congress, L
         currentIndex = (currentIndex + 1) % images.length;
         imgElement.src = images[currentIndex];
       });
+
+      
     </script>
       
     
