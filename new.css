@@ -264,7 +264,8 @@ width: 38vw;
   .row {
     flex-direction: column;
     height: auto;
-    padding: 25px 0;
+    padding: 10px 0;
+
   }
 
   .row .column1,
@@ -273,6 +274,14 @@ width: 38vw;
     margin-right: 0;
     margin-bottom: 20px;
   }
+
+.row .column1{
+  flex-basis: 60vw;
+}
+
+.row .column2{
+  flex-basis: 20vw;
+}
 
   .info {
     flex-direction: column;
@@ -285,5 +294,14 @@ width: 38vw;
 
   .custom-gif {
     height: 10vw;
+    position: absolute;
+    margin-left: 50vw;
   }
+
+  .slide{
+    padding-top: 30px;
+  }
+
+
 }
+
