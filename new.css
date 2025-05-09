@@ -259,6 +259,7 @@ width: 38vw;
     height: auto;
     overflow: visible;
     padding-right: 0;
+    padding-top: 0px;
   }
 
   .row {
@@ -293,10 +294,11 @@ width: 38vw;
   }
 
   .custom-gif {
-    height: 10vw;
+    display: none;
+    /* height: 10vw;
     position: relative;
     margin-top: -38px;
-    margin-left: 392px;
+    margin-left: 392px; */
   }
 
   .slide{
