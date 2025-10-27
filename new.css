@@ -76,8 +76,8 @@ margin-top: 15px;
     justify-content: space-between;
     padding-bottom: 35px; /* Adds space before the bottom border */
     padding-top: 35px;
-    height: 53vh; /* Set a specific height for the rows */
-    border-bottom: 0.5px solid #ffb4a0; /* Add a line between rows */
+    height: 53vh; 
+    border-bottom: 0.5px solid #ffb4a0; 
   }
   
   .column1, .column2, .column3 {
