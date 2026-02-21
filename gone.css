@@ -5,7 +5,7 @@
 }
 
 html{
-    background-color: black;
+    background-color: white;
 }
 
 body{
@@ -45,7 +45,7 @@ body{
 }
 
 p{
-    color: white;
+    color: black;
     line-height: 20px;
     /* margin-left: 20vw;
     margin-right: 20vw; */
@@ -63,7 +63,7 @@ span{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 

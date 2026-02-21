@@ -10,16 +10,16 @@
 }
 
 html {
-    background-color: black;
+    background-color: white;
 }
 
 body {
     font-family: "Junicode";
     margin: 0;
     font-size: 16px;
-    color: white;
+    color: black;
     word-wrap: break-word;
-    overflow: hidden;
+    /* overflow: hidden; */
     line-height: 21px;
 }
 
@@ -50,13 +50,13 @@ p {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 45px; /* optional, adds space between bio and projects */
+    gap: 45px; /* space between bio and projects */
     margin-left: 30px;
 }
 
 .bio {
-    width: 27vw;
-    margin-top: 20px;
+    width: 23vw;
+    margin-top: 10px;
     height: auto;
 }
 
@@ -64,20 +64,18 @@ p {
     /* flex: 2; */
     overflow-y: scroll;
     padding-right: 20px;
-    height: 102vh;
-    width: 70vw;
-    padding-bottom: 60px;
-margin-top: 15px;
+    height: 99vh;
+width: 75%;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 35px; /* Adds space before the bottom border */
-    padding-top: 35px;
-    height: 53vh; 
-    border-bottom: 0.5px solid #ffb4a0; 
+    /* border-bottom: 0.75px solid #ffa58b;  */
+    overflow: hidden;
+  height: clamp(420px, 70vh, 820px);
+          margin-top: 10px;
   }
   
   .column1, .column2, .column3 {
@@ -85,17 +83,20 @@ margin-top: 15px;
     height: 100%;
   }
 
-  .row .column1 {
-    position: relative;
-    flex-shrink: 0; /* Prevent from shrinking */
-    height: auto;
-    margin-right: 30px;
-    flex-basis: 42vw;
-  }  
+.row .column1 {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  margin-right: 20px;
+  justify-content: center; /* add this */
+    flex-basis: 60vw;
+    margin-top: -20px;
+}
 
   .row .column2{
-    flex-basis: 40vw;
-        margin-right: 35px;
+    flex-basis: 20vw;
   }
 
   /* .row .column3{
@@ -104,29 +105,29 @@ margin-top: 15px;
     flex-basis: 16vw;
   } */
   
-  .slide {
+  /* .slide {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Fill the column */
+    width: 100%; 
     height: 100%;
-    object-fit: cover; /* Optional: maintain aspect ratio */
+    object-fit: contain; 
     opacity: 0;
     transition: opacity 0.45s ease-in-out;
   }  
 
   .slide.active {
     opacity: 1;
-  }
+  } */
   
   .project-name{
     font-size: 22px;
   }
   
-  .project-name#individual{
+  /* .project-name#individual{
     padding-bottom: 14px;
-    border-bottom: .5px solid #ffb4a0;; /* Add a line between rows */
-  }
+    border-bottom: 1px solid #ffa58b;
+  } */
 
   h1{
     font-family: "Junicode-Italic";
@@ -135,7 +136,7 @@ margin-top: 15px;
 
   #header{
     font-family: "Junicode";
-    text-decoration: underline .5px #ffb4a0;
+    text-decoration: underline .75px #ffa58b;
     text-underline-offset: 6px;
     font-kerning: normal;
     font-size: 22px;
@@ -148,17 +149,17 @@ margin-top: 15px;
 } */
 
 #symbol{
-  color: #ffb4a0;
+  color: #ffa58b;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 
 a:hover{
-    color:  #ffb4a0; 
+    color:  #ffa58b; 
 }
 
 .contact{
@@ -171,21 +172,9 @@ a:hover{
 
 /* Image Gallery */
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 900px;
-  padding-top: 20px;
-  height: 500px;
-  margin: auto;
-  gap: 10px; /* space between arrows and image */
-  /* background-color: aquamarine; */
-  transition: opacity 0.45s ease-in-out;
-}
 
-.image-container {
+
+/* .image-container {
   flex: 1;
   height: 100%;
   display: flex;
@@ -194,24 +183,24 @@ a:hover{
 }
 
 .gallery img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
 .gallery button {
   background: none;
-  color: #ffb4a0;
+  color: #ffa58b;
   border: none;
   padding: 15px;
   cursor: pointer;
   font-size: 36px;
   transition: color 0.3s ease;
-}
+} */
 
 .gallery button:hover {
-  color: white;
+  color: black;
 }
 
 .prev{
@@ -219,7 +208,7 @@ a:hover{
 }
 
 
-.info{
+/* .info{
   margin-top: 25px;
   font-size: 14px;
   line-height: 18px;
@@ -227,7 +216,8 @@ a:hover{
   flex-direction: row;
   gap: 45px;
   margin-bottom: 42px;
-}
+  background-color: aqua;
+} */
 
 .about{
 width: 54vw;
@@ -237,6 +227,48 @@ height: auto;
 .year{
 width: 38vw;
 }
+
+.image-track {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+/* hide scrollbar but keep functionality */
+.image-track::-webkit-scrollbar {
+  display: none;
+}
+.image-track {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.image-track img {
+  max-height: none;
+  max-width: 100%;
+  width: auto;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: contain;
+  scroll-snap-align: center;
+    display: block;
+}
+
+#signal1{
+    object-fit: cover;
+}
+
+
+#arrow{
+  font-size: 12px;
+}
+
 
 @media screen and (max-width: 768px) {
   html, body {
@@ -249,6 +281,7 @@ width: 38vw;
     margin: 20px 10px;
     gap: 20px;
   }
+
 
   .bio {
     width: 98%;
@@ -265,23 +298,21 @@ width: 38vw;
   .row {
     flex-direction: column;
     height: auto;
-    padding: 10px 0;
-
+    padding: 2px 0;
   }
 
   .row .column1,
   .row .column2 {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 20px;
   }
 
 .row .column1{
-  flex-basis: 65vw;
+  flex-basis: 60vw;
 }
 
 .row .column2{
-  flex-basis: 28vw;
+ margin-bottom: 20px;
 }
 
   .info {
@@ -301,12 +332,13 @@ width: 38vw;
     margin-left: 392px; */
   }
 
-  .slide{
+  /* .slide{
     padding-top: 34px;
-  }
+  } */
+
 
   .project-name{
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .page-container{
