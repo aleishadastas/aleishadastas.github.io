@@ -284,7 +284,7 @@ width: 38vw;
 
 
   .bio {
-    width: 98%;
+    width: 100%;
   }
 
   .projects {
@@ -308,7 +308,7 @@ width: 38vw;
   }
 
 .row .column1{
-  flex-basis: 70vw;
+  flex-basis: 80vw;
 }
 
 .row .column2{
